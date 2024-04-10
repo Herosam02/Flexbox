@@ -1,0 +1,187 @@
+﻿a:link {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: inherit;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: underline  #A0A0A0;
+	text-transform: none;
+	word-wrap: break-word;
+}
+a:visited {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: inherit;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: underline  #E0E0E0;
+	text-transform: none;
+	word-wrap: break-word;
+}
+a:hover {
+	color: #114DA8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: inherit;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: underline #4C94FF;
+	text-transform: none;
+	word-wrap: break-word;
+}
+a:active {
+	color: #114DA8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: inherit;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: underline #4C94FF;
+	text-transform: none;
+	word-wrap: break-word;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-align: justify;
+	word-wrap: break-word;
+	background-image: url("imagefiles/bkgrnd1.jpg");
+	background-color: #ffffff;
+}
+h1 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #114DA8;
+	word-wrap: break-word;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.59em;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: normal;
+	text-transform: none;
+	color: #114DA8;
+	text-align: left;
+	margin-bottom: 0;
+    padding-bottom: 0;
+    word-wrap: break-word;
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.26em;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #114DA8;
+	text-align: left;
+	margin-bottom: 0;
+    padding-bottom: 0;
+    word-wrap: break-word;
+}
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: normal;
+	text-transform: none;
+	color: #114DA8;
+	text-align: left;
+	margin-bottom: 0;
+        padding-bottom: 0;
+        word-wrap: break-word;
+}
+.Logo-large {
+	border-width: 0;
+	max-width: 2053px;
+	min-width: 300px;
+	width: 33%; 
+	height: auto; 
+}
+.Logo-small {
+	border-width: 0;
+	max-width: 2053px;
+	min-width: 300px;
+	width: 33%; 
+	height: auto; 
+}
+.header-table {
+	border: 2px solid #a1a1a1;
+	background-color: #dfdfdf;
+	width: 100%;
+}
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	word-wrap: break-word;
+	width: 100%;
+}
+blockquote {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-align: justify;
+	text-indent: 0em;
+	word-wrap: break-word;
+}
+link {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: inherit;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: underline #A0A0A0;
+	text-transform: none;
+	word-wrap: break-word;
+}
+.jquote {
+	color: #C00000;
+}
+.seasonal {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+input.MyButton {
+width: auto;
+padding: 2px;
+margin: 4px 1px 4px 1px;
+cursor: pointer;
+font-weight: normal;
+font-size: 1em;
+background: #e7e7e7;
+color: #000000;
+border: 0px solid #000000;
+border-radius: 7px;
+}
+input.MyButton:hover {
+color: #114DA8;
+background: #e7e7e7;
+}

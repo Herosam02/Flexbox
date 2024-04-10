@@ -1,0 +1,4 @@
+var xhttp = new XMLHttpRequest();
+xhttp.open("GET", "logfile.php?" + window.location.href + "|&|" + document.referrer, true);
+xhttp.timeout = 3000;
+xhttp.send();

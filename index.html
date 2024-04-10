@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <title>CSS Flexbox Layout</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h2>HW Tech store</h2>
+    </div>
+
+    <div class="rightTopbar">
+      <div class="menu">
+        <ul>
+          <li><a href="video/Python Tutorial for Beginners - Full Course in 11 Hours [2020].mp4">Home</a></li>
+          <li><a href="video/Web Development Full Course - 22 Hour Course.mp4">About</a></li>
+          <li><a href="video/Learn HTML & CSS – Full Course for Beginners.mp4">Contact</a></li>
+        </ul>
+      </div>
+
+      <a href="video/Coding For Kids in Python Part 2.mp4" class="profileLink">
+        <div class="profile">
+          <h2 class="profileName">Sam Ji Dam</h2>
+          <img src="images/67498c6c-b7ad-49d0-92df-195a3db93c18-removebg-preview.png">
+        </div>
+      </a>
+
+      <i class="fa fa-bars mobileMenuIcon"></i>
+    </div>
+  </nav>
+
+  <div class="mobileMenu">
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Testimonies</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="main-wrapper">
+
+
+    <aside>
+      <div class="sideMenu">
+        <ul>
+          <li>
+            <i class="fa fa-home menu-icon"></i>
+            <p class="menu-label">Home</p>
+          </li>
+
+          <li>
+            <i class="fa fa-cart-plus menu-icon"></i>
+            <p class="menu-label">Cart</p>
+          </li>
+
+          <li>
+            <i class="fa fa-tag menu-icon"></i>
+            <p class="menu-label">Coupons</p>
+          </li>
+
+          <li>
+            <i class="fa fa-star menu-icon"></i>
+            <p class="menu-label">Favourite items</p>
+          </li>
+
+          <li>
+            <i class="fa fa-gear menu-icon"></i>
+            <p class="menu-label">Settings</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sideFooter">
+        <p>Heros World - &copy; 2023</p>
+        <p>Privacy Policy | Terms and Conditions</p>
+      </div>
+    </aside>
+
+    <main>
+      <div class="mainTop">
+        <div class="topSellers">
+          <div class="titleBar">
+            <div class="left">
+              <i class="fas fa-fire labelIcon"></i>
+              <h2 class="label">Top Sellers</h2>
+            </div>
+            <div class="right">
+              <h2 class="label">Filter by</h2>
+              <i class="fas fa-filter labelIcon"></i>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="profileCard">
+              <img src="images/article 2.jpg" alt="" class="profileImage">
+              <div class="prifileContent">
+                <h2>Jhon Smith</h2>
+                <p>154 Orders</p>
+              </div>
+            </div>
+
+            <div class="profileCard">
+              <img src="images/WiseMen5.jpg" alt="" class="profileImage">
+              <div class="prifileContent">
+                <h2>Jhon Smith</h2>
+                <p>154 Orders</p>
+              </div>
+            </div>
+
+            <div class="profileCard">
+              <img src="images/download1.jpg" alt="" class="profileImage">
+              <div class="prifileContent">
+                <h2>Jhon Smith</h2>
+                <p>154 Orders</p>
+              </div>
+            </div>
+
+            <div class="profileCard">
+              <img src="images/WiseMen6.jpg" alt="" class="profileImage">
+              <div class="prifileContent">
+                <h2>Jhon Smith</h2>
+                <p>154 Orders</p>
+              </div>
+            </div>
+
+            <div class="profileCard">
+              <img src="images/WiseMen6.jpg" class="profileImage">
+              <div class="prifileContent">
+                <h2>Jhon Smith</h2>
+                <p>154 Orders</p>
+              </div>
+            </div>
+
+            <div class="profileCard">
+              <img src="images/images1.jpg" alt="" class="profileImage">
+              <div class="prifileContent">
+                <h2>Jhon Smith</h2>
+                <p>154 Orders</p>
+              </div>
+            </div>
+
+            <div class="profileCard">
+              <img src="images/WiseMen5.jpg" alt="" class="profileImage">
+              <div class="prifileContent">
+                <h2>Jhon Smith</h2>
+                <p>154 Orders</p>
+              </div>
+            </div>
+
+            <div class="profileCard">
+              <img src="images/download1.jpg" alt="" class="profileImage">
+              <div class="prifileContent">
+                <h2>Jhon Smith</h2>
+                <p>154 Orders</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="topArticles">
+          <div class="titleBar">
+            <div class="left">
+              <i class="fas fa-fire labelIcon"></i>
+              <h2 class="label">Top Articles</h2>
+            </div>
+            <!-- <div class="right">
+                <h2 class="label">Filter by</h2>
+                <i class="fas fa-filter labelIcon"></i>
+              </div> -->
+          </div>
+
+          <div class="content">
+            <div class="articleCard">
+              <img src="images/article 1.jpg">
+              <div class="articleContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+            <div class="articleCard">
+              <img src="images/article 1.jpg">
+              <div class="articleContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+            <div class="articleCard">
+              <img src="images/article 1.jpg">
+              <div class="articleContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+            <div class="articleCard">
+              <img src="images/article 1.jpg">
+              <div class="articleContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+
+        <div class="mainBottom">
+          <div class="titleBar">
+            <div class="left">
+              <i class="fas fa-fire labelIcon"></i>
+              <h2 class="label">Latest Articles</h2>
+            </div>
+            <!-- <div class="right">
+                <h2 class="label">Filter by</h2>
+                <i class="fas fa-filter labelIcon"></i>
+              </div> -->
+          </div>
+          <form action="" class="searchForm">
+            <input id="textInput" type="text" placeholder="What are you looking for?">
+            <input id="submit" type="submit" value="Submit">
+          </form>
+
+
+
+          <div class="content">
+            <div class="latestpostCard">
+              <img src="images/Annunciation.jpg">
+              <div class="latestpostContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+            <div class="latestpostCard">
+              <img src="images/Annunciation.jpg">
+              <div class="latestpostContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+            <div class="latestpostCard">
+              <img src="images/Annunciation.jpg">
+              <div class="latestpostContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+            <div class="latestpostCard">
+              <img src="images/Annunciation.jpg">
+              <div class="latestpostContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+            <div class="latestpostCard">
+              <img src="images/Annunciation.jpg">
+              <div class="latestpostContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+            <div class="latestpostCard">
+              <img src="images/Annunciation.jpg">
+              <div class="latestpostContent">
+                <h2>How to design a logo in 5 steps</h2>
+                <p>By Sam Ji. Dam</p>
+              </div>
+            </div>
+          </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>Heros World - &copy; 2023</p>
+  </footer>
+
+
+  <div class="chatBar">
+    <i class="fa fa-comment"></i>
+  </div>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

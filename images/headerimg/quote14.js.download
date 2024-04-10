@@ -1,0 +1,52 @@
+/*Copyright © 2010 Cliff Leitch. Portions created by Jim Young*/
+var current
+var e
+var ref
+var lastevent=0
+var elm=0
+function hidetip(){lastevent=0
+if(document.getElementById&&elm!=0){elm.style.visibility="hidden"}}
+function showtip(xcurrent,xe,xref){lastevent=1
+if(document.getElementById){current=xcurrent
+e=xe
+ref=xref
+var xmlhttp=false;if(!xmlhttp&&typeof XMLHttpRequest!='undefined'){try{xmlhttp=new XMLHttpRequest();}catch(e){xmlhttp=false;}}
+if(!xmlhttp&&window.createRequest){try{xmlhttp=window.createRequest();}catch(e){xmlhttp=false;}}
+xmlhttp.open("GET","Quote20.php?"+ref,true);xmlhttp.onreadystatechange=function(){if(xmlhttp.readyState==4&&xmlhttp.status==200){var BrowserWindowWidth=0,BrowserWindowHeight=0;if(typeof(window.innerWidth)=='number'){BrowserWindowWidth=window.innerWidth;BrowserWindowHeight=window.innerHeight;BrowserWindowLeft=window.pageXOffset;BrowserWindowTop=window.pageYOffset;}else if(document.documentElement&&(document.documentElement.clientWidth||document.documentElement.clientHeight)){BrowserWindowWidth=document.documentElement.clientWidth;BrowserWindowHeight=document.documentElement.clientHeight;BrowserWindowLeft=document.documentElement.scrollLeft;BrowserWindowTop=document.documentElement.scrollTop;}else if(document.body&&(document.body.clientWidth||document.body.clientHeight)){BrowserWindowWidth=document.body.clientWidth;BrowserWindowHeight=document.body.clientHeight;BrowserWindowLeft=document.documentElement.scrollLeft;BrowserWindowTop=document.documentElement.scrollTop;}
+if(document.documentElement&&document.documentElement.scrollLeft){BrowserWindowLeft=document.documentElement.scrollLeft;}
+else if(document.body&&document.body.scrollLeft){BrowserWindowLeft=document.body.scrollLeft;}
+else if(window.pageXOffset){BrowserWindowLeft=window.pageXOffset;}
+else if(window.scrollX){BrowserWindowLeft=window.scrollX;}
+if(document.documentElement&&document.documentElement.scrollTop){BrowserWindowTop=document.documentElement.scrollTop;}
+else if(document.body&&document.body.scrollTop){BrowserWindowTop=document.body.scrollTop;}
+else if(window.pageYOffset){BrowserWindowTop=window.pageYOffset;}
+else if(window.scrollY){BrowserWindowTop=window.scrollY;}
+elm=document.getElementById("tooltip");elm.style.visibility="hidden"
+elml=current;ind1=xmlhttp.responseText.indexOf("<p style")
+ind2=xmlhttp.responseText.indexOf("</body")
+elm.innerHTML=xmlhttp.responseText.substring(ind1,ind2);elm.style.height=elml.style.height;elm.style.left=parseInt(0)+'px';elm.style.top=parseInt(0)+'px';TipHeight=elm.offsetHeight;TipWidth=elm.offsetWidth;xoffsetLeft=elml.offsetLeft
+xoffsetTop=elml.offsetTop
+if(elml.offsetParent){xoffsetLeft=xoffsetLeft+elml.offsetParent.offsetLeft
+xoffsetTop=xoffsetTop+elml.offsetParent.offsetTop
+if(elml.offsetParent.offsetParent){xoffsetLeft=xoffsetLeft+elml.offsetParent.offsetParent.offsetLeft
+xoffsetTop=xoffsetTop+elml.offsetParent.offsetParent.offsetTop
+if(elml.offsetParent.offsetParent.offsetParent){xoffsetLeft=xoffsetLeft+elml.offsetParent.offsetParent.offsetParent.offsetLeft
+xoffsetTop=xoffsetTop+elml.offsetParent.offsetParent.offsetParent.offsetTop
+if(elml.offsetParent.offsetParent.offsetParent.offsetParent){xoffsetLeft=xoffsetLeft+elml.offsetParent.offsetParent.offsetParent.offsetParent.offsetLeft
+xoffsetTop=xoffsetTop+elml.offsetParent.offsetParent.offsetParent.offsetParent.offsetTop}}}}
+TipPosX=xoffsetLeft+elml.offsetWidth+25;TipPosY=xoffsetTop+elml.offsetHeight+25;if(TipPosX+TipWidth>BrowserWindowLeft+BrowserWindowWidth){TipPosX=BrowserWindowLeft+BrowserWindowWidth-TipWidth;if(TipPosX<BrowserWindowLeft){TipPosX=BrowserWindowLeft;}}
+if(TipPosY+TipHeight>BrowserWindowTop+BrowserWindowHeight){TipPosY=xoffsetTop-TipHeight-25;}
+elm.style.left=parseInt(TipPosX)+'px';elm.style.top=parseInt(TipPosY)+'px';if(lastevent==1){elm.style.visibility="visible"}}}
+xmlhttp.send(null)}
+return false;}
+/*function quote(ref){link='cgi-bin/quote.pl?'+ref
+Hgt=160
+Wth=320
+if(screen){Hgt=screen.height/4
+Wth=Math.max(screen.width/2,400)
+LeftPos=(screen.width-Wth)/2}
+VerseWindow=window.open(link,'popwin','resizable=yes,scrollbars=yes,width='+Wth+',height='+Hgt+',left='+LeftPos+',top=0')
+VerseWindow.focus()}
+*/
+function quote(ref){} /* no longer used */
+

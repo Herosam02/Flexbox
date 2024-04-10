@@ -1,0 +1,413 @@
+:root {
+  --primaryBG: rgb(31, 113, 180);
+  --lightBG: rgb(240, 238, 238);
+  --grayText: rgb(177, 177, 177);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial;
+  background-color: var(--lightBG);
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0px auto;
+  margin-top: 20px;
+  display: flex;
+}
+
+nav {
+  background-color: var(--primaryBG);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+nav .rightTopbar {
+  display: flex;
+  align-items: center;
+}
+
+nav .rightTopbar .menu {
+  margin-right: 20px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+nav .menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .menu a:hover {
+  color: rgb(183, 199, 253);
+}
+
+nav .profile {
+  display: flex;
+  align-items: center;
+}
+
+nav .profile h2 {
+  font-size: 18px;
+}
+
+nav .profile img {
+  height: 55px;
+  border: 2px solid #f4f4f4;
+  border-radius: 100%;
+  width: 45px;
+  margin: 0px 10px;
+}
+
+nav .profileLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobileMenu {
+  visibility: hidden;
+  display: none;
+}
+
+.mobileMenuIcon {
+  visibility: hidden;
+}
+
+.chatBar {
+  width: 100px;
+  height: 50px;
+  font-size: 60px;
+  color: var(--primaryBG);
+  position: fixed;
+  bottom: 20px;
+  right: -20px;
+}
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 350px;
+  height: 500px;
+  color: var(--grayText);
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+aside li {
+  list-style-type: none;
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+}
+
+aside li:hover {
+  background-color: var(--lightBG);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: var(--primaryBG);
+}
+
+aside li .menu-icon {
+  font-size: 14px;
+  margin: 0px 10px;
+}
+
+aside li .menu-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+aside .sideFooter {
+  font-size: 12px;
+  padding: 10px;
+}
+
+main {
+  width: 500px;
+  flex-grow: 1;
+  /* padding: 10px;  */
+}
+
+
+.titleBar {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.titleBar .left {
+  display: flex;
+  align-items: center;
+}
+
+.titleBar .right {
+  display: flex;
+  align-items: center;
+}
+
+.titleBar .label {
+  font-size: 12px;
+}
+
+.labelIcon {
+  font-size: 22px;
+  color: coral;
+  margin: 0px 5px;
+}
+
+main .mainTop{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+main .topSellers {
+  border-bottom: 1px dashed rgb(214, 214, 214);
+  margin-bottom: 15px;
+}
+
+main .topSellers .content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+main .topSellers .content .profileCard {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  flex-grow: 1;
+  margin: 10px 0px;
+}
+
+main .topSellers .content .profileCard .profileImage {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
+
+main .topSellers .content .profileCard h2 {
+  font-size: 14px;
+}
+
+main .topSellers .content .profileCard p {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+/* Top Articles Start */
+main .topArticles {
+  border-bottom: 1px dashed rgb(214, 214, 214);
+  margin-bottom: 15px;
+}
+
+main .topArticles .content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+main .topArticles .content .articleCard {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+main .topArticles .content .articleCard img {
+  border-radius: 5%;
+  width: 120px;
+  height: 100px;
+  margin-right: 5px;
+}
+
+main .topArticles .content .articleCard .articleContent {
+
+}
+
+main .topArticles .content .articleCard h2 {
+  font-size: 14px;
+}
+
+main .topArticles .content .articleCard p {
+  font-size: 12px;
+}
+/* Top Articlas End */
+
+
+main .mainBottom{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+main .mainBottom .titleBar{
+  margin-bottom: 15px;
+}
+
+main .mainBottom .searchForm{
+  border-bottom: 1px dashed rgb(214, 214, 214);
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+main .mainBottom .searchForm #textInput{
+  width: 75%;
+  height: 30px;
+  border: #bbb9b9 1px solid;
+  border-radius: 20px;
+}
+
+main .mainBottom .searchForm #textInput::placeholder{
+  padding-left: 15px;
+}
+
+main .mainBottom .searchForm #submit{
+  width: 90px;
+  height: 30px;
+  background-color: var(--primaryBG);
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+main .mainBottom .content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .mainBottom .content .latestpostCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+main .mainBottom .content .latestpostCard img {
+  border-radius: 5%;
+  width: 100%;
+  height: 140px;
+  margin-right: 5px;
+}
+
+main .mainBottom .content .latestpostCard .latestpostContent {
+
+}
+
+main .mainBottom .content .latestpostCard h2 {
+  font-size: 14px;
+}
+
+main .mainBottom .content .latestpostCard p {
+  font-size: 12px;
+}
+
+footer{
+  background-color: #a7a4a4;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  color: rgb(66, 66, 66);
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+
+@media(max-width: 630px) {
+  nav .menu {
+    display: none;
+  }
+
+  nav .profile {
+    display: none;
+  }
+
+  .mobileMenuIcon {
+    font-size: 20px;
+    visibility: visible;
+    margin-right: 10px;
+  }
+
+  .mobileMenu {
+    background-color: var(--primaryBG);
+    width: 70%;
+    height: 100vh;
+    visibility: hidden;
+    padding-top: 10px;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    padding: 5px;
+  }
+
+  .mobileMenu li {
+    margin-bottom: 10px;
+    font-size: 50px;
+    padding: 5px;
+    border-bottom: 1px dashed #f4f4f4;
+    list-style-type: none;
+  }
+
+  .mobileMenu a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .mobileMenu a:hover {
+    color: rgb(151, 151, 151);
+  }
+
+  aside {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+}
